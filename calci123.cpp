@@ -266,7 +266,7 @@ int main()
         cout << "insert any number greater than 0 :";
         cin >> num1;
         x= (num1 -1)/(num1 +1);
-        result=2*(x +x*x*x/3 + x*x*x*x*x/5  + x*x*x*x*x*x*x/7  + x*x*x*x*x*x*x*x*x/9 + x*x*x*x*x*x*x*x*x*x*x/11)/1 ; 
+        result=2*(x + x*x*x/3 + x*x*x*x*x/5  + x*x*x*x*x*x*x/7  + x*x*x*x*x*x*x*x*x/9 + x*x*x*x*x*x*x*x*x*x*x/11)/1 ; 
     }
     else{
     cout << "invalid operator " ;
