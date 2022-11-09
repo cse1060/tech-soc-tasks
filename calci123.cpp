@@ -551,11 +551,10 @@ int main()
         cout << "the given value is in degrees :";
     }else if ( ops == "19"){
         cout << "enter any number :";
-        cin >>num1;
-        x=1/num1;;
-        if (x>=-1 && x<= 1){
+        cin >>x;
+
           if (x>-1 && x< 1){
-            result=0;
+            fac=0;
             pow=1;
             s=-1;
             for(int i=1;i<=500;i+=2){
@@ -565,9 +564,9 @@ int main()
                 for(int t=1; t<=i;t++){
                     s= -1*s;
                 }
-                result=result + pow*s/i;
+                fac=fac + pow*s/i;
             }
-            result=(1.57 - result)*180/3.14;
+            result=90 -(fac)*180/3.14;
         }else if (x>1){
          result=0;
             pow=1;
@@ -581,7 +580,7 @@ int main()
                 }
                 result=result + s/(i*pow);
             }
-            result=(result)*180/3.14;
+            result=90-(1.57-result)*180/3.14;
         }
         else if (x<-1){
        result=0;
@@ -597,12 +596,11 @@ int main()
                 }
                 result=result + s/(i*pow);
             }
-            result=(5.146-(1.57-result))*180/3.14;
+            result=-90 +(1.57-result)*180/3.14;
         } else if (x==1){
             result=45;
         } else if (x==-1){
             result=135;
-        }
         }
         cout << "the given value is in degrees :";
     }else if (ops == "20"){
