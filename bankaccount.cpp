@@ -97,7 +97,7 @@ int main()
     user[0].Accountdetails();
     
     
-int j=1;
+long long int j=1;
     do{
     cout <<"Choose the desired option\n";
     cout<<"1::Create new bank account\n";
@@ -172,7 +172,7 @@ int j=1;
     cin>>a;
     cout<<"Enter your password :";
     cin>>p;
-    cout<<"Please enter the account yo want to add money to:";
+    cout<<"Please enter the account you want to add money to:";
     cin>>t;
     for(i=0;i<=49;i++){
         if (user[i].Accnum==a && user[i].Pin==p){
@@ -182,7 +182,9 @@ int j=1;
         cout<<"********************************************\n";
         cout<<":::::::your money has been successfully transferred:::::::\n";
         user[i].Accountdetails();
-         user[i].Withdraw == user[k].deposit;
+        cout<<"please re enter transfer amount: ";
+        cin>>j;
+                  user[k].deposit=j;
          user[k].Transfer();
                  f=a;
         break;
