@@ -608,19 +608,17 @@ int main()
         cin >> num1;
         x= (num1 -1)/(num1 +1);
         num2=0;
-        for(int i=1; i<50; i+=2){
+        for(int i=1; i<100; i+=2){
             pow=1;
-            fac=1;
-            s=-1;
             for(int j=1;j<=i;j++){
                 pow=pow*x;
             }
             for(int t=1;t<=i;t++){
                 fac=fac*t;
             }
-            num2= num2 + pow/fac;
+            num2= num2 + pow/i;
         }
-        result= -1*num2;
+        result= 2*num2;
     }
     else{
     cout << "invalid operator " ;
